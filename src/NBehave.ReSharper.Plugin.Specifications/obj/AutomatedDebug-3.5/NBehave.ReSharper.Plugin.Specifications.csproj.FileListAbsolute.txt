@@ -1,0 +1,6 @@
+C:\workspace\vs2012projects\NBehave\build\Debug-3.5\UnitTests\Features\Scenario.feature
+C:\workspace\vs2012projects\NBehave\build\Debug-3.5\UnitTests\NBehave.ReSharper.Plugin.Specifications.dll
+C:\workspace\vs2012projects\NBehave\build\Debug-3.5\UnitTests\NBehave.ReSharper.Plugin.Specifications.pdb
+C:\workspace\vs2012projects\NBehave\src\NBehave.ReSharper.Plugin.Specifications\obj\AutomatedDebug-3.5\NBehave.ReSharper.Plugin.Specifications.csprojResolveAssemblyReference.cache
+C:\workspace\vs2012projects\NBehave\src\NBehave.ReSharper.Plugin.Specifications\obj\AutomatedDebug-3.5\NBehave.ReSharper.Plugin.Specifications.dll
+C:\workspace\vs2012projects\NBehave\src\NBehave.ReSharper.Plugin.Specifications\obj\AutomatedDebug-3.5\NBehave.ReSharper.Plugin.Specifications.pdb
