@@ -18,3 +18,8 @@ I would appricate any help. Please send me your ideas and codes as the project m
 Licence
 =======
 NBehave is licensed under [BSD 3](http://opensource.org/licenses/BSD-3-Clause)
+
+
+Instructions
+============
+For anyone who wants to compile this code, make sure you have Powershell. It also helps to have Windows SDK installed, but it is not neccessary.

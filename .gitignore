@@ -1,0 +1,30 @@
+bin
+obj
+build
+packages
+buildframework/psake*
+
+_NCrunch_*
+*.ncrunchproject
+*.ncrunchsolution
+
+*_ReSharper*
+*.resharper.*
+
+*.suo
+*.user
+
+TestResult.xml
+
+*.csproj_
+*.sln_
+*.suo__
+*.suo_
+
+/Tools/Reactive Extensions
+/Tools/Rx
+/Tools/RxTest
+/Tools/VSSDK
+/Tools/Blend
+/Tools/Microsoft Visual Studio 2010 SDK
+/Tools/Microsoft.Net.Framework.v3.5
