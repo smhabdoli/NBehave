@@ -30,33 +30,31 @@ namespace NBehave.Fluent.Framework
             var parameters = _parameterConverter.GetParametersForStep(stringStep);
             return () =>
                        {
-                           actionMethodInfo.ExecuteNotificationMethod(typeof(BeforeStepAttribute));
+                           actionMethodInfo.ExecuteNotificationMethod(typeof(NBehave.Narrator.Framework.Hooks.BeforeStepAttribute));
                            actionMethodInfo.MethodInfo.Invoke(_stepHelper, parameters);
-                           actionMethodInfo.ExecuteNotificationMethod(typeof(AfterStepAttribute));
+                           actionMethodInfo.ExecuteNotificationMethod(typeof(NBehave.Narrator.Framework.Hooks.AfterStepAttribute));
                        };
         }
 
         public Action ResolveOnCloseScenario()
         {
-            return LocateNotificationAction(typeof (AfterScenarioAttribute));
+            return LocateNotificationAction(typeof(NBehave.Narrator.Framework.Hooks.AfterScenarioAttribute));
         }
 
         public Action ResolveOnBeforeScenario()
         {
-            return LocateNotificationAction(typeof(BeforeScenarioAttribute));
+            return LocateNotificationAction(typeof(NBehave.Narrator.Framework.Hooks.BeforeScenarioAttribute));
         }
 
         public Action ResolveOnAfterScenario()
         {
-            return LocateNotificationAction(typeof(AfterScenarioAttribute));
+            return LocateNotificationAction(typeof(NBehave.Narrator.Framework.Hooks.AfterScenarioAttribute));
         }
 
         private Action LocateNotificationAction(Type notificationType)
         {
             var methodInfo = _stepHelper.GetType()
-                .GetMethods()
-                .Where(info => info.GetCustomAttributes(notificationType, true).Length > 0)
-                .FirstOrDefault();
+                .GetMethods().FirstOrDefault(info => info.GetCustomAttributes(notificationType, true).Length > 0);
             if (methodInfo == null)
                 return null;
             return () => methodInfo.Invoke(_stepHelper, new object[0]);

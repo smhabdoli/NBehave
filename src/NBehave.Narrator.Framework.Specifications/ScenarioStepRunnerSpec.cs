@@ -88,25 +88,25 @@ namespace NBehave.Narrator.Framework.Specifications
             {
             }
 
-            [BeforeScenario]
+            [NBehave.Narrator.Framework.Hooks.BeforeScenario]
             public void OnBeforeScenario()
             {
                 timesBeforeScenarioWasCalled++;
             }
 
-            [BeforeStep]
+            [NBehave.Narrator.Framework.Hooks.BeforeStep]
             public void OnBeforeStep()
             {
                 timesBeforeStepWasCalled++;
             }
 
-            [AfterStep]
+            [NBehave.Narrator.Framework.Hooks.AfterStep]
             public void OnAfterStep()
             {
                 timesAfterStepWasCalled++;
             }
 
-            [AfterScenario]
+            [NBehave.Narrator.Framework.Hooks.AfterScenario]
             public void OnAfterScenario()
             {
                 timesAfterScenarioWasCalled++;
@@ -210,13 +210,13 @@ namespace NBehave.Narrator.Framework.Specifications
             {
             }
 
-            [BeforeScenario]
+            [NBehave.Narrator.Framework.Hooks.BeforeScenario]
             public void OnBeforeScenario()
             {
                 throw new ApplicationException("OnBeforeScenario failed");
             }
 
-            [AfterStep]
+            [NBehave.Narrator.Framework.Hooks.AfterStep]
             public void AfterStep()
             {
                 afterStepWasCalled = true;

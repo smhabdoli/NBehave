@@ -1,5 +1,6 @@
 ﻿using System;
 using NBehave.VS2012.Plugin.Contracts;
+using NLog;
 
 namespace NBehave.VS2012.Plugin.Domain
 {

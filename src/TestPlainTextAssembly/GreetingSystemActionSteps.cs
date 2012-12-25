@@ -10,7 +10,7 @@ namespace TestPlainTextAssembly
     {
         private List<string> _hellos;
         
-        [BeforeScenario]
+        [NBehave.Narrator.Framework.Hooks.BeforeScenario]
         public void Setup()
         {
             _hellos = new List<string>();

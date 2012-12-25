@@ -105,25 +105,25 @@ namespace NBehave.Narrator.Framework.Specifications
             public void GivenSomething()
             { }
 
-            [BeforeScenario]
+            [NBehave.Narrator.Framework.Hooks.BeforeScenario]
             public void OnBeforeScenario()
             {
                 _beforeScenarioWasCalled = true;
             }
 
-            [BeforeStep]
+            [NBehave.Narrator.Framework.Hooks.BeforeStep]
             public void OnBeforeStep()
             {
                 _beforeStepWasCalled = true;
             }
 
-            [AfterStep]
+            [NBehave.Narrator.Framework.Hooks.AfterStep]
             public void OnAfterStep()
             {
                 _afterStepWasCalled = true;
             }
 
-            [AfterScenario]
+            [NBehave.Narrator.Framework.Hooks.AfterScenario]
             public void OnAfterScenario()
             {
                 _afterScenarioWasCalled = true;
@@ -194,7 +194,7 @@ namespace NBehave.Narrator.Framework.Specifications
             public void GivenSomething()
             { }
 
-            [AfterStep]
+            [NBehave.Narrator.Framework.Hooks.AfterStep]
             public void AfterStep()
             {
                 throw new ArgumentNullException("AfterStep");
@@ -229,13 +229,13 @@ namespace NBehave.Narrator.Framework.Specifications
             public void GivenSomething()
             { }
 
-            [BeforeStep]
+            [NBehave.Narrator.Framework.Hooks.BeforeStep]
             public void BeforeStep()
             {
                 throw new ArgumentNullException("BeforeStep");
             }
 
-            [AfterStep]
+            [NBehave.Narrator.Framework.Hooks.AfterStep]
             public void AfterStep()
             {
                 _afterStepWasCalled = true;
@@ -271,7 +271,7 @@ namespace NBehave.Narrator.Framework.Specifications
                 throw new NotImplementedException("fail");
             }
 
-            [AfterStep]
+            [NBehave.Narrator.Framework.Hooks.AfterStep]
             public void AfterStep()
             {
                 _afterStepWasCalled = true;

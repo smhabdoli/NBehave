@@ -54,7 +54,7 @@ namespace NBehave.Narrator.Framework.Internal
         {
             if (lastAction != null)
             {
-                lastAction.ExecuteNotificationMethod(typeof(AfterScenarioAttribute));
+                lastAction.ExecuteNotificationMethod(typeof(NBehave.Narrator.Framework.Hooks.AfterScenarioAttribute));
             }
         }
 
@@ -67,7 +67,7 @@ namespace NBehave.Narrator.Framework.Internal
         {
             if (lastAction != null)
             {
-                lastAction.ExecuteNotificationMethod(typeof(AfterScenarioAttribute));
+                lastAction.ExecuteNotificationMethod(typeof(NBehave.Narrator.Framework.Hooks.AfterScenarioAttribute));
             }
         }
 
@@ -126,12 +126,12 @@ namespace NBehave.Narrator.Framework.Internal
 
         private void BeforeEachStep(ActionMethodInfo info)
         {
-            info.ExecuteNotificationMethod(typeof(BeforeStepAttribute));
+            info.ExecuteNotificationMethod(typeof(NBehave.Narrator.Framework.Hooks.BeforeStepAttribute));
         }
 
         private void AfterEachStep(ActionMethodInfo info)
         {
-            info.ExecuteNotificationMethod(typeof(AfterStepAttribute));
+            info.ExecuteNotificationMethod(typeof(NBehave.Narrator.Framework.Hooks.AfterScenarioAttribute));
         }
 
         private void BeforeEachScenario(ActionMethodInfo info)
@@ -139,14 +139,14 @@ namespace NBehave.Narrator.Framework.Internal
             if (isFirstStepInScenario)
             {
                 isFirstStepInScenario = false;
-                info.ExecuteNotificationMethod(typeof(BeforeScenarioAttribute));
+                info.ExecuteNotificationMethod(typeof(NBehave.Narrator.Framework.Hooks.BeforeScenarioAttribute));
             }
         }
 
         private Exception FindUsefulException(Exception e)
         {
             var realException = e;
-            while (realException != null && realException.GetType() == typeof(TargetInvocationException))
+            while (realException != null && realException is TargetInvocationException)
             {
                 realException = realException.InnerException;
             }

@@ -2,6 +2,9 @@
 using NBehave.VS2012.Plugin.Contracts;
 using NBehave.VS2012.Plugin.Domain;
 using NBehave.VS2012.Plugin.Tiny;
+using NLog;
+using NLog.Config;
+using NLog.Targets;
 
 namespace NBehave.VS2012.Plugin.Configuration
 {
