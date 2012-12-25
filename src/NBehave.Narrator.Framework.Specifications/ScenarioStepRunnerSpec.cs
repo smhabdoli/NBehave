@@ -164,7 +164,7 @@ namespace NBehave.Narrator.Framework.Specifications
             {
             }
 
-            [AfterScenario]
+            [NBehave.Narrator.Framework.Hooks.AfterScenario]
             public void OnAfterScenario()
             {
                 throw new ApplicationException("AfterScenario failed");
@@ -221,6 +221,7 @@ namespace NBehave.Narrator.Framework.Specifications
             {
                 afterStepWasCalled = true;
             }
+
             [TestFixtureSetUp]
             public void Setup()
             {
