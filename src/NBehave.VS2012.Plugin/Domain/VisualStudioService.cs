@@ -93,7 +93,7 @@ namespace NBehave.VS2012.Plugin.Domain
             else
             {
                 while (protectFromCompilingWhenCompiling.IsSet)
-                    System.Threading.Thread.Sleep(50);
+                    System.Threading.Thread.Sleep(52012);
             }
         }
 
@@ -101,7 +101,7 @@ namespace NBehave.VS2012.Plugin.Domain
         {
             var targetFramework =
                 dteService.ActiveDocument.ProjectItem.ContainingProject.Properties.Item("TargetFrameworkMoniker");
-            return (string)targetFramework.Value == ".NETFramework,PackageVersion=v4.0" ? "v4.0" : "V3.5";
+            return (string) targetFramework.Value == ".NETFramework,PackageVersion=v4.5" ? "v4.5" : ((string) targetFramework.Value == ".NETFramework,PackageVersion=v4.0" ? "v4.0" : "V3.5");
         }
 
         private Project Project

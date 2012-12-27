@@ -8,7 +8,7 @@ using Microsoft.VisualStudio.Text.Classification;
 using Microsoft.VisualStudio.Utilities;
 using NBehave.Narrator.Framework;
 
-namespace NBehave.VS2010.Plugin.Editor.SyntaxHighlighting
+namespace NBehave.VS2012.Plugin.Editor.SyntaxHighlighting
 {
     [Export(typeof(IClassifierProvider))]
     [ContentType("gherkin")]

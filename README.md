@@ -1,5 +1,3 @@
-This is a port of NBehave from Visual Studio 2010 to Visual Studio 2012.
-
 NBehave
 =======
 NBehave is a framework for Behaviour-Driven Development
@@ -11,15 +9,11 @@ It shifts the vocabulary from being test-based to behaviour-based, and positions
  * [Project web site](http://nbehave.org)
  * [Documentation](https://github.com/nbehave/NBehave/wiki/Documentation)
 
+
 Contribute
 =======
-I would appricate any help. Please send me your ideas and codes as the project moves on.
+We would love your help. Send us patches, report/fix bugs, request features etc.
 
 Licence
 =======
 NBehave is licensed under [BSD 3](http://opensource.org/licenses/BSD-3-Clause)
-
-
-Instructions
-============
-For anyone who wants to compile this code, make sure you have Powershell. It also helps to have Windows SDK installed, but it is not neccessary.

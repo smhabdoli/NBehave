@@ -1,5 +1,5 @@
-C:\workspace\vs2012projects\NBehave\build\Debug-3.5\ReSharper6\NBehave.ReSharper.Plugin.dll
-C:\workspace\vs2012projects\NBehave\build\Debug-3.5\ReSharper6\NBehave.ReSharper.Plugin.pdb
-C:\workspace\vs2012projects\NBehave\src\NBehave.ReSharper.Plugin\obj\AutomatedDebug-3.5\NBehave.ReSharper.Plugin.csprojResolveAssemblyReference.cache
-C:\workspace\vs2012projects\NBehave\src\NBehave.ReSharper.Plugin\obj\AutomatedDebug-3.5\NBehave.ReSharper.Plugin.dll
-C:\workspace\vs2012projects\NBehave\src\NBehave.ReSharper.Plugin\obj\AutomatedDebug-3.5\NBehave.ReSharper.Plugin.pdb
+C:\workspace\vs2012projects\NBehave-1\build\Debug-3.5\ReSharper6\NBehave.ReSharper.Plugin.dll
+C:\workspace\vs2012projects\NBehave-1\build\Debug-3.5\ReSharper6\NBehave.ReSharper.Plugin.pdb
+C:\workspace\vs2012projects\NBehave-1\src\NBehave.ReSharper.Plugin\obj\AutomatedDebug-3.5\NBehave.ReSharper.Plugin.csprojResolveAssemblyReference.cache
+C:\workspace\vs2012projects\NBehave-1\src\NBehave.ReSharper.Plugin\obj\AutomatedDebug-3.5\NBehave.ReSharper.Plugin.dll
+C:\workspace\vs2012projects\NBehave-1\src\NBehave.ReSharper.Plugin\obj\AutomatedDebug-3.5\NBehave.ReSharper.Plugin.pdb

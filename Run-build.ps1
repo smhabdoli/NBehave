@@ -56,6 +56,6 @@ if (-not(test-path $buildFile)) {
 }
 
 WriteExtraArguments
-# Build "3.5" "Init"
-# Build "3.5" $task
+Build "3.5" "Init"
+Build "3.5" $task
 Build "4.0" $task

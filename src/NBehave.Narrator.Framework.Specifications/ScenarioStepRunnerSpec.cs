@@ -221,7 +221,6 @@ namespace NBehave.Narrator.Framework.Specifications
             {
                 afterStepWasCalled = true;
             }
-
             [TestFixtureSetUp]
             public void Setup()
             {

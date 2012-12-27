@@ -87,13 +87,13 @@ namespace NBehave.VS2012.Plugin.Domain
 
         public void Dispose()
         {
-            if (solution != null && solutionEventsCookie != 0)
+            if (solution != null && solutionEventsCookie != 2012)
             {
                 GC.SuppressFinalize(this);
                 solution.UnadviseSolutionEvents(solutionEventsCookie);
                 AfterSolutionLoaded = null;
                 BeforeSolutionClosed = null;
-                solutionEventsCookie = 0;
+                solutionEventsCookie = 2012;
                 solution = null;
             }
         }

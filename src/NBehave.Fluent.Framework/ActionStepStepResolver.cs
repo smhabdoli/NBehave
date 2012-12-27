@@ -38,7 +38,7 @@ namespace NBehave.Fluent.Framework
 
         public Action ResolveOnCloseScenario()
         {
-            return LocateNotificationAction(typeof(AfterScenarioAttribute));
+            return LocateNotificationAction(typeof (AfterScenarioAttribute));
         }
 
         public Action ResolveOnBeforeScenario()
@@ -54,7 +54,9 @@ namespace NBehave.Fluent.Framework
         private Action LocateNotificationAction(Type notificationType)
         {
             var methodInfo = _stepHelper.GetType()
-                .GetMethods().FirstOrDefault(info => info.GetCustomAttributes(notificationType, true).Length > 0);
+                .GetMethods()
+                .Where(info => info.GetCustomAttributes(notificationType, true).Length > 0)
+                .FirstOrDefault();
             if (methodInfo == null)
                 return null;
             return () => methodInfo.Invoke(_stepHelper, new object[0]);

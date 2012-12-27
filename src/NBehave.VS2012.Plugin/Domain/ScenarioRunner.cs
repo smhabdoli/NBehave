@@ -11,7 +11,7 @@ using NBehave.VS2012.Plugin.Contracts;
 
 namespace NBehave.VS2012.Plugin.Domain
 {
-    [Guid("7D6EEAFD-FFC0-4d56-A1A9-256178D1A330")]
+    [Guid("EE8ECEE9-8E52-4BEC-AD11-49B5D35832C5")]
     [ComVisible(true)]
     public interface IScenarioRunner
     {

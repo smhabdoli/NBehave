@@ -5,9 +5,9 @@ using System.Linq;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Classification;
 using NBehave.Narrator.Framework;
-using NBehave.VS2010.Plugin.Editor.Domain;
+using NBehave.VS2012.Plugin.Editor.Domain;
 
-namespace NBehave.VS2010.Plugin.Editor.SyntaxHighlighting
+namespace NBehave.VS2012.Plugin.Editor.SyntaxHighlighting
 {
     [Export(typeof(GherkinClassifier))]
     public class GherkinClassifier

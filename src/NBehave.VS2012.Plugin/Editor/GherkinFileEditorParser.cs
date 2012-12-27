@@ -7,7 +7,7 @@ using Microsoft.VisualStudio.Text.Classification;
 using NBehave.Narrator.Framework;
 using NBehave.Narrator.Framework.Internal;
 
-namespace NBehave.VS2010.Plugin.Editor
+namespace NBehave.VS2012.Plugin.Editor
 {
     [Export(typeof(GherkinFileEditorParserFactory))]
     [PartCreationPolicy(CreationPolicy.Shared)]

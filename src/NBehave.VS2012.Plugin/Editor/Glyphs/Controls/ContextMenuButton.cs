@@ -1,6 +1,8 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using Microsoft.VisualStudio.PlatformUI;
 
 namespace NBehave.VS2012.Plugin.Editor.Glyphs.Controls
 {
@@ -12,6 +14,6 @@ namespace NBehave.VS2012.Plugin.Editor.Glyphs.Controls
             set { base.SetValue(SourceProperty, value); }
         }
         public static readonly DependencyProperty SourceProperty =
-          DependencyProperty.Register("Source", typeof(ImageSource), typeof(ContextMenuButton)); 
+          DependencyProperty.Register("Source", typeof(ImageSource), typeof(ContextMenuButton));
     }
 }

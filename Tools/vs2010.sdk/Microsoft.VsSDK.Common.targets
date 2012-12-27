@@ -26,11 +26,11 @@ PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
   <UsingTask TaskName="CreateMenuPkgDef" AssemblyFile="Microsoft.VsSDK.Build.Tasks.dll" />
 
   <!--
-    Set the general properties for this installation of the SDK 
+    Set the general properties for this installation of the SDK
   -->
   <PropertyGroup>
-    <VsSDKVersion>10.0</VsSDKVersion>
-    <VSSDKTargetPlatformVersion>10.0</VSSDKTargetPlatformVersion>
+    <VsSDKVersion>11.0</VsSDKVersion>
+    <VSSDKTargetPlatformVersion>11.0</VSSDKTargetPlatformVersion>
     <VSSDKTargetsPath>$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VsSDKVersion)\VSSDK</VSSDKTargetsPath>
     <VSSDKTargetPlatformRegRoot>Software\Microsoft\VisualStudio\$(VSSDKTargetPlatformVersion)</VSSDKTargetPlatformRegRoot>
     <VSSDKTargetPlatformRegRootSuffix Condition="'$(VSSDKTargetPlatformRegRootSuffix)' == ''">Exp</VSSDKTargetPlatformRegRootSuffix>
@@ -123,7 +123,7 @@ PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
     <ReadLinesFromFile File="$(IntermediateOutputPath)$(VsixCleanFile)">
       <Output TaskParameter="Lines" ItemName="_VsixCleanPriorFileWrites"/>
     </ReadLinesFromFile>
-    
+
     <!--
         Merge list of files from prior builds with the current build and then
         remove duplicates.
@@ -142,7 +142,7 @@ PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
         Overwrite="true" />
 
   </Target>
-  
+
   <!--
     =======================================================================================================
                                          Clean Deployed Vsix Extension Files
@@ -181,7 +181,7 @@ PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
         Lines="@(_VsixCleanRemainingFileWritesAfterIncrementalClean)"
         Condition="'@(_VsixCleanPriorFileWrites)'!='@(_VsixCleanRemainingFileWritesAfterIncrementalClean)'"
         Overwrite="true"/>
-    
+
   </Target>
 
 </Project>

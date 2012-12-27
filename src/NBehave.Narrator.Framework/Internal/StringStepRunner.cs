@@ -87,9 +87,7 @@ namespace NBehave.Narrator.Framework.Internal
             {
                 //TODO: Move Before-/After-EachStep to RunContext !!
                 BeforeEachScenario(info);
-                
                 BeforeEachStep(info);
-                
                 if (actionStep is StringTableStep && !ShouldForEachOverStep(info))
                     ForEachOverStep(actionStep as StringTableStep, info);
                 else
@@ -148,7 +146,7 @@ namespace NBehave.Narrator.Framework.Internal
         private Exception FindUsefulException(Exception e)
         {
             var realException = e;
-            while (realException != null && realException is TargetInvocationException)
+            while (realException != null && realException.GetType() == typeof(TargetInvocationException))
             {
                 realException = realException.InnerException;
             }

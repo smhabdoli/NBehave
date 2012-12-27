@@ -1,5 +1,7 @@
 using System;
 using System.ComponentModel.Design;
+using System.Diagnostics;
+using System.Globalization;
 using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
 using NBehave.Narrator.Framework.Tiny;
@@ -14,18 +16,26 @@ namespace NBehave.VS2012.Plugin
     [PackageRegistration(UseManagedResourcesOnly = true)]
     // This attribute is used to register the informations needed to show the this package
     // in the Help/About dialog of Visual Studio.
-    [InstalledProductRegistration("#110", "#112", "0.6.0", IconResourceID = 400)]
+    [InstalledProductRegistration("#110", "#112", "0.6.1", IconResourceID = 400)]
     // This attribute is needed to let the shell know that this package exposes some menus.
     [ProvideMenuResource("Menus.ctmenu", 1)]
     [Guid(Identifiers.NBehavePackageGuidString)]
-    [ProvideAutoLoad("{af49930f-d430-4ac0-97c9-656c903f6270}")]
+    [ProvideAutoLoad("{d4dbc24c-2233-42f4-896f-55825b63d79a}")]
     [ProvideService(typeof(IOutputWindow))]
     [ProvideService(typeof(IVisualStudioService))]
     [ProvideService(typeof(IPluginLogger))]
     public sealed class NBehaveRunnerPackage : Package
     {
+        public NBehaveRunnerPackage ()
+        {
+            Debug.WriteLine(string.Format(CultureInfo.CurrentCulture, "Entering constructor for: {0}", this.ToString()));
+        }
+
+        #region Package Members
+        
         protected override void Initialize()
         {
+            Debug.WriteLine(string.Format(CultureInfo.CurrentCulture, "Entering Initialize() of: {0}", this.ToString()));
             base.Initialize();
             var container = new TinyIoCContainer();
             container.Register<IServiceProvider>(this);
@@ -45,5 +55,6 @@ namespace NBehave.VS2012.Plugin
                 new PublishCrossPackageServicesTask()
                 );
         }
+        #endregion
     }
 }

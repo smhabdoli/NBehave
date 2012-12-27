@@ -2,7 +2,7 @@ using System.Runtime.InteropServices;
 
 namespace NBehave.VS2012.Plugin.Contracts
 {
-    [Guid("733f8cbc-53fc-42af-b722-d5dcf4e3800b")]
+    [Guid("212a1c76-12b4-486b-aad4-d57c8a73ada1")]
     [ComVisible(true)]
     public interface IVisualStudioService
     {

@@ -2,7 +2,7 @@ using System.Runtime.InteropServices;
 
 namespace NBehave.VS2012.Plugin.Contracts
 {
-    [Guid("bf2e13f1-c365-4e52-9042-9c5668bd1c23")]
+    [Guid("14600e9c-c610-45ab-8202-e33434747327")]
     [ComVisible(true)]
     public interface IOutputWindow
     {

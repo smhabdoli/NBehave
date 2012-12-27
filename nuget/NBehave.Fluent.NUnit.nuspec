@@ -22,7 +22,7 @@
     </dependencies>
   </metadata>
   <files>
-    <!-- <file src="..\build\Debug-3.5\NBehave\NBehave.Fluent.Framework.dll" target="lib\net35" /> -->
+    <file src="..\build\Debug-3.5\NBehave\NBehave.Fluent.Framework.dll" target="lib\net35" />
     <file src="..\build\Debug-4.0\NBehave\NBehave.Fluent.Framework.dll" target="lib\net40" />
   </files>
 </package>

@@ -25,8 +25,8 @@ namespace NBehave.VS2012.Plugin.Editor.Glyphs.ViewModels
         {
             buttons = new List<dynamic>
             {
-                new { Icon = new BitmapImage(new Uri("pack://application:,,,/NBehave.VS2010.Plugin;component/Editor/Resources/Icons/Debug.png", UriKind.Absolute)), Text="Start With Debugger", Command = DebugClicked },
-                new { Icon = new BitmapImage(new Uri("pack://application:,,,/NBehave.VS2010.Plugin;component/Editor/Resources/Icons/Play.png", UriKind.Absolute)), Text="Start Without Debugger", Command = RunClicked }
+                new { Icon = new BitmapImage(new Uri("pack://application:,,,/NBehave.VS2012.Plugin;component/Editor/Resources/Icons/Debug.png", UriKind.Absolute)), Text="Start With Debugger", Command = DebugClicked },
+                new { Icon = new BitmapImage(new Uri("pack://application:,,,/NBehave.VS2012.Plugin;component/Editor/Resources/Icons/Play.png", UriKind.Absolute)), Text="Start Without Debugger", Command = RunClicked }
             };
         }
 
@@ -73,7 +73,7 @@ namespace NBehave.VS2012.Plugin.Editor.Glyphs.ViewModels
             RelativeVisualElement = visualElement;
             Position = Point.Subtract(position, new Vector(3, 3));
             GherkinText = gherkinText;
-            
+
             // Dont want multiple events to fire.
             if (initialized)
                 return;
@@ -143,8 +143,8 @@ namespace NBehave.VS2012.Plugin.Editor.Glyphs.ViewModels
         {
             buttons = new List<dynamic>
             {
-                new { Icon = new BitmapImage(new Uri("pack://application:,,,/NBehave.VS2010.Plugin;component/Editor/Resources/Icons/Debug.png", UriKind.Absolute)), Text="Start With Debugger" },
-                new { Icon = new BitmapImage(new Uri("pack://application:,,,/NBehave.VS2010.Plugin;component/Editor/Resources/Icons/Play.png", UriKind.Absolute)), Text="Start Without Debugger" }
+                new { Icon = new BitmapImage(new Uri("pack://application:,,,/NBehave.VS2012.Plugin;component/Editor/Resources/Icons/Debug.png", UriKind.Absolute)), Text="Start With Debugger" },
+                new { Icon = new BitmapImage(new Uri("pack://application:,,,/NBehave.VS2012.Plugin;component/Editor/Resources/Icons/Play.png", UriKind.Absolute)), Text="Start Without Debugger" }
             };
         }
 

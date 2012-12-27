@@ -1,4 +1,4 @@
-﻿namespace NBehave.VS2012.Plugin.Editor.Resources
+﻿namespace NBehave.VS2012.Plugin
 {
     public partial class Logo
     {

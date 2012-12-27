@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 
 namespace NBehave.VS2012.Plugin.Contracts
 {
-    [Guid("0a91b46f-0311-4bd6-8394-f1d6ad87b978")]
+    [Guid("00685310-eb75-4c6a-953d-1cb901e1445d")]
     public interface IPluginLogger
     {
         void ErrorException(string message, Exception exception);

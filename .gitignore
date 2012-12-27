@@ -15,16 +15,4 @@ _NCrunch_*
 *.user
 
 TestResult.xml
-
-*.csproj_
-*.sln_
-*.suo__
-*.suo_
-
-/Tools/Reactive Extensions
-/Tools/Rx
-/Tools/RxTest
-/Tools/VSSDK
-/Tools/Blend
-/Tools/Microsoft Visual Studio 2010 SDK
-/Tools/Microsoft.Net.Framework.v3.5
+/src/NBehave.VS2012.Plugin/Key.snk

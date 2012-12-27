@@ -1,5 +1,5 @@
 ﻿<ResourceDictionary
-	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="NBehave.VS2012.Plugin.Editor.Resources.c__projects_nbehave_src_nbehave_vs2012_plugin_editor_resources_colours_xaml">
 	<Color x:Key="ContextMenuInactiveBackground">#FFD0E1E8</Color>
 	<Color x:Key="ContextMenuIconInactiveBackground">#FFE9ECEE</Color>
