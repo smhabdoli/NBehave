@@ -30,25 +30,25 @@ namespace NBehave.Fluent.Framework
             var parameters = _parameterConverter.GetParametersForStep(stringStep);
             return () =>
                        {
-                           actionMethodInfo.ExecuteNotificationMethod(typeof(NBehave.Narrator.Framework.Hooks.BeforeStepAttribute));
+                           actionMethodInfo.ExecuteNotificationMethod(typeof(BeforeStepAttribute));
                            actionMethodInfo.MethodInfo.Invoke(_stepHelper, parameters);
-                           actionMethodInfo.ExecuteNotificationMethod(typeof(NBehave.Narrator.Framework.Hooks.AfterStepAttribute));
+                           actionMethodInfo.ExecuteNotificationMethod(typeof(AfterStepAttribute));
                        };
         }
 
         public Action ResolveOnCloseScenario()
         {
-            return LocateNotificationAction(typeof(NBehave.Narrator.Framework.Hooks.AfterScenarioAttribute));
+            return LocateNotificationAction(typeof(AfterScenarioAttribute));
         }
 
         public Action ResolveOnBeforeScenario()
         {
-            return LocateNotificationAction(typeof(NBehave.Narrator.Framework.Hooks.BeforeScenarioAttribute));
+            return LocateNotificationAction(typeof(BeforeScenarioAttribute));
         }
 
         public Action ResolveOnAfterScenario()
         {
-            return LocateNotificationAction(typeof(NBehave.Narrator.Framework.Hooks.AfterScenarioAttribute));
+            return LocateNotificationAction(typeof(AfterScenarioAttribute));
         }
 
         private Action LocateNotificationAction(Type notificationType)

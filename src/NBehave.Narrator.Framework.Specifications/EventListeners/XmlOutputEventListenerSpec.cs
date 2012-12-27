@@ -223,7 +223,7 @@ namespace NBehave.Narrator.Framework.Specifications.EventListeners
             }
         }
 
-        [NBehave.Narrator.Framework.Hooks.BeforeScenario]
+        [BeforeScenario]
         public void WaitSomeTime()
         {
         }

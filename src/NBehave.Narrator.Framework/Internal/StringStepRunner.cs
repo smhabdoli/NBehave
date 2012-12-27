@@ -54,7 +54,7 @@ namespace NBehave.Narrator.Framework.Internal
         {
             if (lastAction != null)
             {
-                lastAction.ExecuteNotificationMethod(typeof(NBehave.Narrator.Framework.Hooks.AfterScenarioAttribute));
+                lastAction.ExecuteNotificationMethod(typeof(AfterScenarioAttribute));
             }
         }
 
@@ -67,7 +67,7 @@ namespace NBehave.Narrator.Framework.Internal
         {
             if (lastAction != null)
             {
-                lastAction.ExecuteNotificationMethod(typeof(NBehave.Narrator.Framework.Hooks.AfterScenarioAttribute));
+                lastAction.ExecuteNotificationMethod(typeof(AfterScenarioAttribute));
             }
         }
 
@@ -87,7 +87,9 @@ namespace NBehave.Narrator.Framework.Internal
             {
                 //TODO: Move Before-/After-EachStep to RunContext !!
                 BeforeEachScenario(info);
+                
                 BeforeEachStep(info);
+                
                 if (actionStep is StringTableStep && !ShouldForEachOverStep(info))
                     ForEachOverStep(actionStep as StringTableStep, info);
                 else
@@ -126,12 +128,12 @@ namespace NBehave.Narrator.Framework.Internal
 
         private void BeforeEachStep(ActionMethodInfo info)
         {
-            info.ExecuteNotificationMethod(typeof(NBehave.Narrator.Framework.Hooks.BeforeStepAttribute));
+            info.ExecuteNotificationMethod(typeof(BeforeStepAttribute));
         }
 
         private void AfterEachStep(ActionMethodInfo info)
         {
-            info.ExecuteNotificationMethod(typeof(NBehave.Narrator.Framework.Hooks.AfterScenarioAttribute));
+            info.ExecuteNotificationMethod(typeof(AfterStepAttribute));
         }
 
         private void BeforeEachScenario(ActionMethodInfo info)
@@ -139,7 +141,7 @@ namespace NBehave.Narrator.Framework.Internal
             if (isFirstStepInScenario)
             {
                 isFirstStepInScenario = false;
-                info.ExecuteNotificationMethod(typeof(NBehave.Narrator.Framework.Hooks.BeforeScenarioAttribute));
+                info.ExecuteNotificationMethod(typeof(BeforeScenarioAttribute));
             }
         }
 
